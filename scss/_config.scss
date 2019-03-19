@@ -1,0 +1,17 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url("../img/showcase.jpg");
+// Remember image routes should pertain to the location of the compiled css NOT the current scss
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
